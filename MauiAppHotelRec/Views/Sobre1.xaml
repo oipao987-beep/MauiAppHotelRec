@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotelRec.Views.Sobre1"
+             Title="Sobre"
+             BackgroundColor="{StaticResource Gray100}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="40" Spacing="50">
+
+            <!-- Título Principal -->
+            <Label Text="Sobre o Aplicativo"
+                   FontSize="36"
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource Primary}"
+                   HorizontalOptions="Center" />
+
+            <!-- Card do Desenvolvedor -->
+            <Frame BackgroundColor="#F8F9FA"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   Padding="20">
+
+                <VerticalStackLayout Spacing="12">
+
+                    <Label Text="Desenvolvedor"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="{StaticResource Primary}" />
+
+                    <Label Text="• Nome: Khenny G. CJ"
+                           FontSize="16"
+                           TextColor="#333" />
+
+                    <Label Text="• Função: Desenvolvedor e Designer do App"
+                           FontSize="16"
+                           TextColor="#333" />
+
+                    <Label Text="• Ano de Desenvolvimento: 2025"
+                           FontSize="16"
+                           TextColor="#333" />
+
+                </VerticalStackLayout>
+            </Frame>
+
+
+            <!-- Frase de Impacto -->
+            <Frame BackgroundColor="{StaticResource Primary}"
+                   CornerRadius="25"
+                   Padding="25"
+                   HasShadow="True">
+
+                <VerticalStackLayout>
+                    <Label Text="“Tecnologia é a arte de transformar ideias simples em experiências extraordinárias.”"
+                           FontSize="18"
+                           FontAttributes="Italic"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center" />
+                </VerticalStackLayout>
+            </Frame>
+
+
+            <!-- Créditos e versão -->
+            <Label Text="Versão 1.0 — Criado com ❤️ em .NET MAUI"
+                   FontSize="14"
+                   TextColor="#666"
+                   HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
